@@ -1,17 +1,35 @@
-import './App.css';
-import Product from './components/Product/Product';
+import "./App.css";
+import { useState } from "react";
+import Product from "./components/Product/Product";
+import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 
-import {products} from './data/products';
-
+import { products } from "./data/products";
 
 function App() {
-  console.log(products);
+  const [buyShoppingCart, setBuyShoppingCart] = useState([]);
+
   return (
-    <div className='main__app'>
-      <h1>Jean Claude Van Damme</h1>
-      {products.map((item,index)=>{
-        return <Product key={index} title={item.title} description={item.description} valoration={item.valoration} price={item.price} image={item.image}/>
-      })}
+    <div className="main__app">
+      <div className="main__products">
+        <h1>Jean Claude Van Damme</h1>
+        <div className="products_list">
+          {products.map((item, index) => {
+            return (
+              <Product
+                key={index}
+                title={item.title}
+                description={item.description}
+                valoration={item.valoration}
+                price={item.price}
+                image={item.image}
+                cart={buyShoppingCart}
+                setCart={setBuyShoppingCart}
+              />
+            );
+          })}
+        </div>
+      </div>
+      <ShoppingCart cart={buyShoppingCart} setCart={setBuyShoppingCart} />
     </div>
   );
 }
