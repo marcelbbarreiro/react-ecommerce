@@ -10,7 +10,7 @@ function App() {
     <>
       <h1>Jean Claude Van Damme</h1>
       {products.map((item,index)=>{
-        return <Product key={index}/>
+        return <Product key={index} title={item.title} description={item.description} valoration={item.valoration} amount={item.amount} price={item.price} image={item.image}/>
       })}
     </>
   );
