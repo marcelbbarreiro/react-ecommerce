@@ -17,6 +17,7 @@ function App() {
             return (
               <Product
                 key={index}
+                id={index}
                 title={item.title}
                 description={item.description}
                 valoration={item.valoration}

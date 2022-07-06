@@ -1,6 +1,6 @@
 export const products = [
   {
-    title: "Jean Claude Van Damme  ",
+    title: "Jean Claude Van Damme 1  ",
     price: 20,
     amount: 100,
     description: "Jean Claude Van Damme Pegatina Designed and Sold by Nerd_art",
@@ -19,7 +19,7 @@ export const products = [
     valoration: 4,
   },
   {
-    title: "Jean Claude Van Damme  ",
+    title: "Jean Claude Van Damme 2 ",
     price: 20,
     amount: 100,
     description: "Jean Claude Van Damme Pegatina Designed and Sold by Nerd_art",
@@ -28,7 +28,7 @@ export const products = [
     valoration: 4,
   },
   {
-    title: "Jean Claude Van Damme  ",
+    title: "Jean Claude Van Damme 3 ",
     price: 20,
     amount: 100,
     description: "Jean Claude Van Damme Pegatina Designed and Sold by Nerd_art",
@@ -37,7 +37,7 @@ export const products = [
     valoration: 4,
   },
   {
-    title: "Jean Claude Van Damme  ",
+    title: "Jean Claude Van Damme 4 ",
     price: 20,
     amount: 100,
     description: "Jean Claude Van Damme Pegatina Designed and Sold by Nerd_art",
