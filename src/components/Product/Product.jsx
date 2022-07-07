@@ -12,6 +12,8 @@ const Product = ({
   description,
   cart,
   setCart,
+  menuState,
+  setMenu,
 }) => {
   const [added, setAdded] = useState(false);
 
@@ -27,6 +29,7 @@ const Product = ({
       },
     ]);
     setAdded(true);
+    setMenu({ ...menuState, right: true });
   };
 
   useEffect(() => {

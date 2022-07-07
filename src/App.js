@@ -34,6 +34,7 @@ function App() {
     }
 
     setState({ ...state, [anchor]: open });
+    console.log("Algoo");
   };
 
   return (
@@ -54,16 +55,18 @@ function App() {
                 image={item.image}
                 cart={buyShoppingCart}
                 setCart={setBuyShoppingCart}
+                menuState={state}
+                setMenu={setState}
               />
             );
           })}
         </div>
       </div>
       <Drawer
+        className="test"
         anchor="right"
         open={state["right"]}
         onClose={toggleDrawer("right", false)}
-        style={{ width: "4rem" }}
       >
         {/* {list(anchor)} */}
         <h1>Shopping Cart</h1>
