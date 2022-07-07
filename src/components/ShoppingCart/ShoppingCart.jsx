@@ -1,8 +1,22 @@
-import "./ShoppingCart.css";
+import { useState, useEffect } from "react";
 import Button from "@mui/material/Button";
 import CartItem from "../CartItem/CartItem";
 
+import "./ShoppingCart.css";
+
 const ShoppingCart = ({ cart, setCart }) => {
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    let totalPrice = 0;
+
+    cart.forEach((item) => {
+      totalPrice += item.cartPrice * item.amount;
+    });
+
+    setTotal(totalPrice);
+  }, [cart]);
+
   console.log(cart);
   return (
     <div className="main__cart">
@@ -20,7 +34,7 @@ const ShoppingCart = ({ cart, setCart }) => {
                   title={item.cartTitle}
                   price={item.cartPrice}
                   image={item.cartImage}
-                  cuantity={item.amount}
+                  quantity={item.amount}
                   cart={cart}
                   setCart={setCart}
                 />
@@ -31,7 +45,7 @@ const ShoppingCart = ({ cart, setCart }) => {
       </ul>
       <div className="cart__bottom">
         <p className="cart__total">Total:</p>
-        <p className="cart__total_price">€0</p>
+        <p className="cart__total_price">€{total}</p>
       </div>
       <Button variant="outlined" color="error" size="large">
         Checkout
