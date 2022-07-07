@@ -1,10 +1,11 @@
 import "./ShoppingCart.css";
+import Button from "@mui/material/Button";
 import CartItem from "../CartItem/CartItem";
 
 const ShoppingCart = ({ cart, setCart }) => {
   return (
     <div className="main__cart">
-      <h3>Shopping Cart</h3>
+      <h3 className="cart-title">Shopping Cart</h3>
       <ul className="cart__list">
         {cart.map((item, index) => {
           return (
@@ -22,7 +23,11 @@ const ShoppingCart = ({ cart, setCart }) => {
         <p className="cart__total">Total:</p>
         <p className="cart__total_price">€0</p>
       </div>
-      <button>Checkout</button>
+      <Button
+        variant="outlined"
+        color="error"
+        size="large">
+          Checkout</Button>
     </div>
   );
 };

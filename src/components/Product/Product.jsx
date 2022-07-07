@@ -1,5 +1,8 @@
 import Button from "@mui/material/Button";
 
+
+
+
 import "./Product.css";
 
 const Product = ({
@@ -32,11 +35,13 @@ const Product = ({
       <div className="product__bottom">
         <p className="product__bottom_price">€{price}</p>
         <Button
-          variant="contained"
+          variant="outlined"
+          color="error"
+          size="large"
           className="product__bottom_buttonAdd"
           onClick={addToCart}
         >
-          Add
+          Add 
         </Button>
       </div>
     </div>
