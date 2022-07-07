@@ -17,10 +17,8 @@ const ShoppingCart = ({ cart, setCart }) => {
     setTotal(totalPrice);
   }, [cart]);
 
-  console.log(cart);
   return (
     <div className="main__cart">
-      <h3 className="cart-title">Shopping Cart</h3>
       <ul className="cart__list">
         {cart.length === 0 ? (
           <p>No items in the cart</p>
