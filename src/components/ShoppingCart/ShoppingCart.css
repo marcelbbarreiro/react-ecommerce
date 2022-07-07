@@ -18,6 +18,8 @@
 
 .cart__total {
   text-align: end;
+  border-top: solid 1px #515151;
+  padding-top: 10px;
 }
 .cart__total_price {
   text-align: end;
