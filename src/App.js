@@ -1,12 +1,19 @@
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Product from "./components/Product/Product";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 
 import { products } from "./data/products";
 
+const initialShoppingCart =
+  JSON.parse(localStorage.getItem("shoppingCart")) || [];
+
 function App() {
-  const [buyShoppingCart, setBuyShoppingCart] = useState([]);
+  const [buyShoppingCart, setBuyShoppingCart] = useState(initialShoppingCart);
+
+  useEffect(() => {
+    localStorage.setItem("shoppingCart", JSON.stringify(buyShoppingCart));
+  }, [buyShoppingCart]);
 
   return (
     <div className="main__app">

@@ -1,4 +1,5 @@
 import Button from "@mui/material/Button";
+import { useState, useEffect } from "react";
 
 import "./Product.css";
 
@@ -12,6 +13,8 @@ const Product = ({
   cart,
   setCart,
 }) => {
+  const [added, setAdded] = useState(false);
+
   const addToCart = () => {
     setCart([
       ...cart,
@@ -23,7 +26,20 @@ const Product = ({
         amount: 1,
       },
     ]);
+    setAdded(true);
   };
+
+  useEffect(() => {
+    cart.forEach((item) => {
+      if (item.cartId === id) {
+        setAdded(true);
+      }
+    });
+  });
+
+  // useEffect(() => {
+  //   console.log("useEffect");
+  // }, [cart]);
 
   return (
     <div className="product__container">
@@ -37,15 +53,21 @@ const Product = ({
 
       <div className="product__bottom">
         <p className="product__bottom_price">€{price}</p>
-        <Button
-          variant="outlined"
-          color="error"
-          size="large"
-          className="product__bottom_buttonAdd"
-          onClick={addToCart}
-        >
-          Add
-        </Button>
+        {added ? (
+          <Button disabled style={{ color: "white" }}>
+            Added
+          </Button>
+        ) : (
+          <Button
+            variant="outlined"
+            color="error"
+            size="large"
+            className="product__bottom_buttonAdd"
+            onClick={addToCart}
+          >
+            Add
+          </Button>
+        )}
       </div>
     </div>
   );
