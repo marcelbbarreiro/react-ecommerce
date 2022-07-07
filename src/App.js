@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="main__app">
       <div className="main__products">
-        <h1>Jean Claude Van Damme</h1>
+        <h1 className="main__title">Jean Claude Van Damme</h1>
         <div className="products_list">
           {products.map((item, index) => {
             return (
