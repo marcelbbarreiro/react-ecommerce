@@ -1,8 +1,5 @@
 import Button from "@mui/material/Button";
 
-
-
-
 import "./Product.css";
 
 const Product = ({
@@ -18,7 +15,13 @@ const Product = ({
   const addToCart = () => {
     setCart([
       ...cart,
-      { cartId: id, cardTitle: title, cartPrice: price, cartImage: image },
+      {
+        cartId: id,
+        cardTitle: title,
+        cartPrice: price,
+        cartImage: image,
+        amount: 1,
+      },
     ]);
   };
 
@@ -41,7 +44,7 @@ const Product = ({
           className="product__bottom_buttonAdd"
           onClick={addToCart}
         >
-          Add 
+          Add
         </Button>
       </div>
     </div>
