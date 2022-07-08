@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import Button from "@mui/material/Button";
+import { Button,Avatar } from "@nextui-org/react";
+
 import CartItem from "../CartItem/CartItem";
 
 import "./ShoppingCart.css";
@@ -16,6 +17,8 @@ const ShoppingCart = ({ cart, setCart }) => {
 
     setTotal(totalPrice);
   }, [cart]);
+
+const Icon = () => {}
 
   return (
     <div className="main__cart">
@@ -45,7 +48,7 @@ const ShoppingCart = ({ cart, setCart }) => {
         <p className="cart__total">Total:</p>
         <p className="cart__total_price">€{total}</p>
       </div>
-      <Button variant="outlined" color="error" size="large">
+      <Button auto color="error" flat>
         Checkout
       </Button>
     </div>
@@ -53,3 +56,4 @@ const ShoppingCart = ({ cart, setCart }) => {
 };
 
 export default ShoppingCart;
+

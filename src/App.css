@@ -3,6 +3,10 @@
 .App {
   text-align: center;
 }
+.MuiPaper-root {
+  width: 30%;
+}
+
 
 .main__app {
   display: flex;
