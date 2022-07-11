@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Button,Avatar } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 
 import CartItem from "../CartItem/CartItem";
 
@@ -17,8 +17,6 @@ const ShoppingCart = ({ cart, setCart }) => {
 
     setTotal(totalPrice);
   }, [cart]);
-
-const Icon = () => {}
 
   return (
     <div className="main__cart">
@@ -56,4 +54,3 @@ const Icon = () => {}
 };
 
 export default ShoppingCart;
-
