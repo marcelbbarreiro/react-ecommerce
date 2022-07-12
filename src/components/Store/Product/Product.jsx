@@ -46,15 +46,14 @@ const Product = ({
             New
           </Text>
           <Text h3 color="#CE7500" size={20} weight="bold">
-            {/* {title} */}
+            {title}
             Test Title
           </Text>
         </Col>
       </Card.Header>
       <Card.Body css={{ p: 0 }}>
         <Card.Image
-          // src={image}
-          src=""
+          src={image}
           width="100%"
           height="100%"
           objectFit="cover"
@@ -77,7 +76,7 @@ const Product = ({
               Available soon.
             </Text>
             <Text color="#000" size={20}>
-              € {90}
+              € {price}
             </Text>
           </Col>
           <Col>
@@ -98,30 +97,7 @@ const Product = ({
         </Row>
       </Card.Footer>
     </Card>
-    // <div className="product__container">
-    //   <img className="product__container_img" src={image} alt="img" />
-    //   <p className="product__container_title">{title}</p>
-    //   <span className="product__container_rating">{valoration}⭐️</span>
-    //   <p className="product__container_description">{description}</p>
-    //   <div className="product__bottom">
-    //     <p className="product__bottom_price">€{price}</p>
-    //     {added ? (
-    //       <button disabled style={{ color: "white" }}>
-    //         Added
-    //       </button>
-    //     ) : (
-    //       <button
-    //         variant="outlined"
-    //         color="error"
-    //         size="large"
-    //         className="product__bottom_buttonAdd"
-    //         onClick={addToCart}
-    //       >
-    //         Add
-    //       </button>
-    //     )}
-    //   </div>
-    // </div>
+
   );
 };
 
