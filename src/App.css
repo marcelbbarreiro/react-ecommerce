@@ -6,6 +6,13 @@
 
 .main__app {
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.navbar__container {
+  display: flex;
+  height: 5vh;
+  width: 100%;
   border: 2px solid black;
 }

@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
-import Login from "./components/Login/Login";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./components/Login/Login.jsx";
 
 const Router = () => {
   return (
@@ -9,7 +9,7 @@ const Router = () => {
         <Route path="/" element={<App />} />
       </Routes>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/Login" elemnt={<Login />} />
       </Routes>
     </BrowserRouter>
   );
