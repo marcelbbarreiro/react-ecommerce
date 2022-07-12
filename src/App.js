@@ -21,6 +21,7 @@ function App() {
   return (
     <div className="main__app">
       <div className="main__products">
+        <h1>Hello</h1>
         {/* <div className="products_list">
           {products.map((item, index) => {
             return (
