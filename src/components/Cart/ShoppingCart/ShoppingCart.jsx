@@ -19,7 +19,10 @@ const ShoppingCart = ({ cart, setCart }) => {
 
   return (
     <div className="main__cart">
+      <h3>Shopping Cart</h3>
       <ul className="cart__list">
+        <CartItem />
+
         {/* {cart.length === 0 ? (
 					<p>No items in the cart</p>
 				) : (
@@ -45,7 +48,7 @@ const ShoppingCart = ({ cart, setCart }) => {
         <p className="cart__total">Total:</p>
         <p className="cart__total_price">€{total}</p>
       </div>
-      <Button light color="warning" auto>
+      <Button bordered color="warning" auto>
         Checkout
       </Button>
     </div>

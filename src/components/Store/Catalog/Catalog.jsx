@@ -1,15 +1,12 @@
-/* This is importing the useEffect and useState hooks from the React library. */
+import { dblClick } from "@testing-library/user-event/dist/click";
 import { useEffect, useState } from "react";
-/* This is importing the Product component from the Product folder. */
 import Product from "../Product/Product";
-/* This is importing the CSS file for the Catalog component. */
+
 import "./Catalog.css";
 
-/* This is a function that is returning a component. */
-const Catalog = () => {
+const Catalog = ({ shoppingCart, setShoppingCart }) => {
   const [products, setSaveProducts] = useState([]);
 
-/* This is a hook that is being used to fetch data from the server. */
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await fetch("http://localhost:3001/products");
@@ -18,16 +15,24 @@ const Catalog = () => {
     };
     fetchProducts();
   }, []);
-
-/* Returning a component. */
+  console.log(shoppingCart);
   return (
     <div className="catalog__container">
       {products.map(({ id, title, price, image }) => {
-        return <Product key={id} title={title} price={price} image={image} />;
+        return (
+          <Product
+            key={id}
+            id={id}
+            title={title}
+            price={price}
+            image={image}
+            shoppingCart={shoppingCart}
+            setShoppingCart={setShoppingCart}
+          />
+        );
       })}
     </div>
   );
 };
 
-/* This is exporting the Catalog component. */
 export default Catalog;
