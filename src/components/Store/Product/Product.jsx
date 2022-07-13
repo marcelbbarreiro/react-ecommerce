@@ -94,7 +94,7 @@ const Product = ({
           </Col>
           <Col>
             <Row justify="flex-end">
-              <Button color="warning" auto ghost>
+              <Button color="warning" auto ghost disabled={itemAdded}>
                 <Text
                   css={{ color: "black" }}
                   size={12}
@@ -102,7 +102,7 @@ const Product = ({
                   transform="uppercase"
                   onClick={addToCart}
                 >
-                  Shop Now
+                  {itemAdded ? "Added" : "Shop Now"}
                 </Text>
               </Button>
             </Row>
