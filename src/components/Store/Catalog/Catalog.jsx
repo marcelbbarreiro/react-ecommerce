@@ -1,4 +1,3 @@
-import { dblClick } from "@testing-library/user-event/dist/click";
 import { useEffect, useState } from "react";
 import Product from "../Product/Product";
 
@@ -15,7 +14,7 @@ const Catalog = ({ shoppingCart, setShoppingCart }) => {
     };
     fetchProducts();
   }, []);
-  console.log(shoppingCart);
+
   return (
     <div className="catalog__container">
       {products.map(({ id, title, price, image }) => {

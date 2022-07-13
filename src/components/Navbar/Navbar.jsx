@@ -3,7 +3,7 @@ import ShoppingCart from "../Cart/ShoppingCart/ShoppingCart";
 
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ shoppingCart, setShoppingCart }) => {
   return (
     <div className="navbar__container">
       <div className="navbar__container_logo">Logo</div>
@@ -22,8 +22,11 @@ const Navbar = () => {
               Cart
             </Button>
           </Popover.Trigger>
-          <Popover.Content>
-            <ShoppingCart />
+          <Popover.Content css={{ width: "max-content" }}>
+            <ShoppingCart
+              shoppingCart={shoppingCart}
+              setShoppingCart={setShoppingCart}
+            />
           </Popover.Content>
         </Popover>
       </div>
@@ -32,4 +35,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
