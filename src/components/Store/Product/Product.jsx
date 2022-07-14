@@ -56,7 +56,7 @@ const Product = ({
     <Card css={{ w: "15%", h: "330px" }}>
       <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
         <Col>
-          <Text size={12} weight="bold" transform="uppercase" color="#ffffffAA">
+          <Text size={12} weight="bold" transform="uppercase" >
             New
           </Text>
           <Text h3 color="#CE7500" size={20} weight="bold">
