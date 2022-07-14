@@ -1,6 +1,5 @@
 .catalog__container {
   display: flex;
   justify-content: space-around;
-  border: 2px solid red;
-  height: 30vh;
+  background: #f3f3f3;
 }

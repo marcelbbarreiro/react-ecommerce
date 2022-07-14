@@ -7,12 +7,5 @@
 .main__app {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
-}
-
-.navbar__container {
-  display: flex;
-  height: 5vh;
-  width: 100%;
-  border: 2px solid black;
+  border: 2px solid #f3f3f3;
 }
