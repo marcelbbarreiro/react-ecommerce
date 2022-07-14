@@ -18,7 +18,7 @@ const Navbar = ({ shoppingCart, setShoppingCart }) => {
       <div className="navbar__container_icons">
         <Popover>
           <Popover.Trigger>
-            <Button auto ghost>
+          <Button flat color="warning" auto>
               Cart
             </Button>
           </Popover.Trigger>

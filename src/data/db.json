@@ -2,7 +2,7 @@
   "products" : [
       {
         "id":1,
-        "title": "Poster",
+        "title": "POTTERY VASE",
         "price": 20,
         "amount": 50,
         "description": "Bruce Lee T-shirt Yellow Tee top, Material: Polyester",
@@ -12,7 +12,7 @@
       },
       {
         "id":2,
-        "title": "Bag",
+        "title": "BASKET",
         "price": 30,
         "amount": 30,
         "description": "Vintage Bruce lee Tote Bag ",
@@ -23,7 +23,7 @@
       },
       {
         "id":3,
-        "title": "Sandbag",
+        "title": "LAMP",
         "price": 10,
         "amount": 20,
         "description":
@@ -34,7 +34,7 @@
       },
       {
         "id":4,
-        "title": "Nike",
+        "title": "CHAIR",
         "price": 150,
         "amount": 20,
         "description": "Nike Kobe 5 Protro Bruce Lee",
@@ -45,7 +45,7 @@
       },
       {
         "id":5,
-        "title": "Nunchaku",
+        "title": "NEWSPAPER STORAGE",
         "price": 40,
         "amount": 150,
         "description": "Nunchaku Bruce Lee. Material: Wood",
