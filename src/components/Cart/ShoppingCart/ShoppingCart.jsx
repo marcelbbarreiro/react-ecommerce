@@ -31,6 +31,8 @@ const ShoppingCart = ({ shoppingCart, setShoppingCart }) => {
                 itemPrice={itemPrice}
                 itemImage={itemImage}
                 itemQuantity={itemQuantity}
+                shoppingCart={shoppingCart}
+                setShoppingCart={setShoppingCart}
               />
             );
           }
