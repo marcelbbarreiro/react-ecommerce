@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Button } from "@nextui-org/react";
 import "./CartItem.css";
 
@@ -34,7 +33,7 @@ const CartItem = ({
     const newCart = shoppingCart.filter((item) => item.itemId !== itemId);
     setShoppingCart(newCart);
   };
-  console.log(shoppingCart);
+
   return (
     <div className="cart__item">
       <img className="cart__item_image" src={itemImage} alt="product" />
