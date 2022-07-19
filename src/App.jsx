@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Catalog from "./components/Store/Catalog/Catalog";
+import Services from "./components/Footer/Services/Services";
+import BottomSection from "./components/Footer/BottomSection/BottomSection";
+import ShippingBanner from "./components/Footer/ShippingBanner/ShippingBanner";
 
 import "./App.css";
-import Footer from "./components/Footer/Footer";
+
 
 const initialStorage = JSON.parse(localStorage.getItem("saveCache")) || [];
 
@@ -18,7 +21,9 @@ function App() {
     <div className="main__app">
       <Navbar shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />
       <Catalog shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />
-      <Footer />
+      <ShippingBanner />
+      <Services />
+      <BottomSection />
     </div>
   );
 }
