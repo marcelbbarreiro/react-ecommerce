@@ -1,23 +1,20 @@
 .navbar__container {
-  display: flex;
-  border-bottom: 2px solid silver;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+	display: flex;
+	height: 5vh;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid black;
 }
 
 .navbar__container_logo {
-  margin-left: 2rem;
+	margin-left: 2rem;
 }
 
 .navbar__container_icons {
-  margin-right: 2rem;
-}
+	display: flex;
+	flex-direction: row;
+	margin-right: 2rem;
+	gap: 1rem;
 
-.navbar__container_links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 0.5rem;
 }
