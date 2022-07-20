@@ -3,8 +3,8 @@ import Product from "../Product/Product";
 
 import "./Catalog.css";
 
-const Catalog = ({ shoppingCart, setShoppingCart }) => {
-  const [products, setSaveProducts] = useState([]);
+const Catalog = ({ shoppingCart, setShoppingCart, wishlistCart, setWishlistCart }) => {
+	const [products, setSaveProducts] = useState([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -27,6 +27,8 @@ const Catalog = ({ shoppingCart, setShoppingCart }) => {
             image={image}
             shoppingCart={shoppingCart}
             setShoppingCart={setShoppingCart}
+            wishlistCart={wishlistCart}
+						setWishlistCart={setWishlistCart}
           />
         );
       })}
