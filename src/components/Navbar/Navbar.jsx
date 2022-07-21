@@ -1,9 +1,10 @@
 import ShoppingCart from "../Cart/ShoppingCart/ShoppingCart";
-import { Popover, User, Button } from "@nextui-org/react";
 import Wishlist from "../Cart/Wishlist/Wishlist";
+import { Popover, User, Button } from "@nextui-org/react";
 import Heart from "../../assets/icons/Heart2.svg";
 import Buy from "../../assets/icons/Buy.svg";
 import { UserTwitterCard } from "./Avatar/Avatar";
+import { FcBookmark } from "react-icons/fc";
 import "./Navbar.css";
 
 const Navbar = ({ shoppingCart, setShoppingCart, wishlistCart,setWishlistCart }) => {
@@ -49,13 +50,14 @@ const Navbar = ({ shoppingCart, setShoppingCart, wishlistCart,setWishlistCart })
 
 				<Popover>
 					<Popover.Trigger>
-          <Button icon={<img src={Heart} alt="icon" className="icon-heart" />}
-          color="error" light ></Button>
+          <Button color="error" light ><FcBookmark size="5rem" /></Button>
 					</Popover.Trigger>
 					<Popover.Content css={{ width: "max-content" }}>
             <Wishlist
-            wishlistCart={wishlistCart}
-            setWishlist={setWishlistCart}
+     						wishlistCart={wishlistCart}
+							setWishlistCart={setWishlistCart}
+							shoppingCart={shoppingCart}
+							setShoppingCart={setShoppingCart}
             />
           </Popover.Content>
 				</Popover>

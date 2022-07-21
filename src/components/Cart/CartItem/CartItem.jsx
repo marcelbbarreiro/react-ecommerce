@@ -9,6 +9,9 @@ const CartItem = ({
   shoppingCart,
   setShoppingCart,
   itemQuantity,
+  wish,
+  wishlistCart,
+  setWishlistCart,
 }) => {
   const restQuantityItem = () => {
     if (itemQuantity === 1) return;
@@ -30,8 +33,15 @@ const CartItem = ({
   };
 
   const itemRemove = () => {
-    const newCart = shoppingCart.filter((item) => item.itemId !== itemId);
-    setShoppingCart(newCart);
+    if (wish) {
+      const newWishList = wishlistCart.filter(
+       (wishItem) => wishItem.itemId !== itemId,
+      );
+      setWishlistCart(newWishList);
+      } else {
+        const newCart = shoppingCart.filter((item) => item.itemId !== itemId);
+        setShoppingCart(newCart);
+    }
   };
 
   return (

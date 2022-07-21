@@ -1,5 +1,4 @@
 .main__cart {
-  border: 1px solid #414141;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

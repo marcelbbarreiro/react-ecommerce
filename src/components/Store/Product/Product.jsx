@@ -4,7 +4,7 @@
 
 import { useState, useEffect } from "react";
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
-import Heart from "../../../assets/icons/Heart2.svg";
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import "./Product.css";
 
 const Product = ({
@@ -22,6 +22,7 @@ const Product = ({
 	setMenu,
 }) => {
 	const [itemAdded, setItemAdded] = useState(false);
+	const [wishlistAdded, setWishlistAdded] = useState(false);
 
 	const addToCart = () => {
 		setShoppingCart([
@@ -49,6 +50,17 @@ const Product = ({
 		]);
 		// setItemAdded(true);
 	};
+	
+	useEffect(() => {
+		const result = wishlistCart.some((item) => {
+			if (item.itemId === id) {
+				return true;
+			}
+			return false;
+		});
+		result && setWishlistAdded(true);
+		!result && setWishlistAdded(false);
+	}, [id, wishlistCart]);
 
 	useEffect(() => {
 		const resutl = shoppingCart.some((product) => {
@@ -68,8 +80,18 @@ const Product = ({
 					<Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
 						New
 					</Text>
-					<Button icon={<img src={Heart} alt="icon" className="icon-heart" />}
-          color="error" light onClick={addToWishlistCart} ></Button>
+					<Button
+						color='error'
+						light
+						onClick={addToWishlistCart}
+						disabled={wishlistAdded}
+					>
+						{wishlistAdded ? (
+							<AiFillHeart size='5rem' />
+						) : (
+							<AiOutlineHeart size='5rem' />
+						)}
+					</Button>
 					<Text h3 color='#CE7500' size={20} weight='bold'>
 						{title}
 					</Text>
