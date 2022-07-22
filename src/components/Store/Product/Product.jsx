@@ -80,7 +80,7 @@ const Product = ({
 					<Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
 						New
 					</Text>
-					<Button
+					<Button className="wishlist__button auto"
 						color='error'
 						light
 						onClick={addToWishlistCart}
