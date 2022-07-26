@@ -49,6 +49,7 @@ function App() {
         setShoppingCart={setShoppingCart}
         wishlistCart={wishlistCart}
         setWishlistCart={setWishlistCart}
+        notifyToast={notifyToast}
       />
       <ShippingBanner />
       <Services />

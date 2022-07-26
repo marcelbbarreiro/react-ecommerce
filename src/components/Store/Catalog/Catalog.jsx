@@ -1,14 +1,20 @@
-import { useEffect, useState } from "react";
-import Product from "../Product/Product";
+import { useEffect, useState } from 'react';
+import Product from '../Product/Product';
 
-import "./Catalog.css";
+import './Catalog.css';
 
-const Catalog = ({ shoppingCart, setShoppingCart, wishlistCart, setWishlistCart }) => {
-	const [products, setSaveProducts] = useState([]);
+const Catalog = ({
+  shoppingCart,
+  setShoppingCart,
+  wishlistCart,
+  setWishlistCart,
+  notifyToast,
+}) => {
+  const [products, setSaveProducts] = useState([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch("http://localhost:3001/products");
+      const response = await fetch('http://localhost:3001/products');
       const data = await response.json();
       setSaveProducts(data);
     };
@@ -28,7 +34,8 @@ const Catalog = ({ shoppingCart, setShoppingCart, wishlistCart, setWishlistCart 
             shoppingCart={shoppingCart}
             setShoppingCart={setShoppingCart}
             wishlistCart={wishlistCart}
-						setWishlistCart={setWishlistCart}
+            setWishlistCart={setWishlistCart}
+            notifyToast={notifyToast}
           />
         );
       })}
