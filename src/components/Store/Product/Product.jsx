@@ -50,6 +50,7 @@ const Product = ({
       },
     ]);
     // setItemAdded(true);
+    notifyToast(`${title} added to the Wishlist`);
   };
 
   useEffect(() => {

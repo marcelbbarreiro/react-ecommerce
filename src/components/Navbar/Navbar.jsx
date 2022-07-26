@@ -81,6 +81,7 @@ const Navbar = ({
               setWishlistCart={setWishlistCart}
               shoppingCart={shoppingCart}
               setShoppingCart={setShoppingCart}
+              notifyToast={notifyToast}
             />
           </Popover.Content>
         </Popover>
