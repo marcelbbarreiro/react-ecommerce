@@ -4,7 +4,7 @@ import { Button, Loading } from '@nextui-org/react';
 
 import './ShoppingCart.css';
 
-const ShoppingCart = ({ shoppingCart, setShoppingCart }) => {
+const ShoppingCart = ({ shoppingCart, setShoppingCart, userCache }) => {
   const [totalItemPrice, setTotalItemPrice] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -19,6 +19,11 @@ const ShoppingCart = ({ shoppingCart, setShoppingCart }) => {
   }, [shoppingCart]);
 
   const handleCheckout = () => {
+    if (userCache.username === undefined) {
+      console.log('object');
+      return;
+    }
+    setIsLoading(true);
     fetch('http://localhost:4242/create-checkout-session', {
       method: 'POST',
       headers: {
@@ -31,6 +36,7 @@ const ShoppingCart = ({ shoppingCart, setShoppingCart }) => {
         return res.json().then((json) => Promise.reject(json));
       })
       .then(({ url }) => {
+        setIsLoading(false);
         window.location = url;
       })
       .catch((e) => {
@@ -68,7 +74,7 @@ const ShoppingCart = ({ shoppingCart, setShoppingCart }) => {
         <p className="cart__total_price">€{totalItemPrice}</p>
       </div>
       <Button bordered color="warning" auto onClick={handleCheckout}>
-        Checkout
+        {isLoading ? <Loading type="points" /> : 'Checkout'}
       </Button>
     </div>
   );
