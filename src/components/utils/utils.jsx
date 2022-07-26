@@ -1,5 +1,4 @@
 const apiKey = process.env.REACT_APP_API_KEY;
-
 export async function LoginVerification({ username, password }) {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
@@ -14,7 +13,7 @@ export async function LoginVerification({ username, password }) {
 
 const fetchData = async () => {
 	const response = await fetch(
-		`https://api.giphy.com/v1/gifs/search?api_key=WEqpWXit0homJ46FrGMIMgFpg5v0d0xY&q=vandamme&limit=25&offset=0&rating=g&lang=en`,
+		`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=vandamme&limit=25&offset=0&rating=g&lang=en`,
 	);
 	const data = await response.json();
 	return data;
