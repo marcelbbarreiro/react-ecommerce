@@ -8,9 +8,11 @@ const Router = () => {
 		<BrowserRouter>
 			<Routes>
 				<Route path='/' element={<App />} />
+				<Route path='/success' element={<App />} />
+				<Route path='/cancel' element={<App />} />
 			</Routes>
 			<Routes>
-				<Route path='./components/Login/Login.jsx' element={<Login />} />
+				<Route path='/login' element={<Login />} />
 			</Routes>
 		</BrowserRouter>
 	);

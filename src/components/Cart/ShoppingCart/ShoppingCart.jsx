@@ -1,11 +1,12 @@
-import CartItem from "../CartItem/CartItem";
-import { useState, useEffect } from "react";
-import { Button } from "@nextui-org/react";
+import CartItem from '../CartItem/CartItem';
+import { useState, useEffect } from 'react';
+import { Button, Loading } from '@nextui-org/react';
 
-import "./ShoppingCart.css";
+import './ShoppingCart.css';
 
 const ShoppingCart = ({ shoppingCart, setShoppingCart }) => {
   const [totalItemPrice, setTotalItemPrice] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     let sumTotalItemPrice = 0;
@@ -16,6 +17,26 @@ const ShoppingCart = ({ shoppingCart, setShoppingCart }) => {
 
     setTotalItemPrice(sumTotalItemPrice);
   }, [shoppingCart]);
+
+  const handleCheckout = () => {
+    fetch('http://localhost:4242/create-checkout-session', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ shoppingCart }),
+    })
+      .then((res) => {
+        if (res.ok) return res.json();
+        return res.json().then((json) => Promise.reject(json));
+      })
+      .then(({ url }) => {
+        window.location = url;
+      })
+      .catch((e) => {
+        console.error(e);
+      });
+  };
 
   return (
     <div className="main__cart">
@@ -46,7 +67,7 @@ const ShoppingCart = ({ shoppingCart, setShoppingCart }) => {
         <p className="cart__total">Total:</p>
         <p className="cart__total_price">€{totalItemPrice}</p>
       </div>
-      <Button bordered color="warning" auto>
+      <Button bordered color="warning" auto onClick={handleCheckout}>
         Checkout
       </Button>
     </div>
