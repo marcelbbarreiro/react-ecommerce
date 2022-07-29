@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import { UserDataContext } from '../../contexts/UserDataContext';
 import ShoppingCart from '../Cart/ShoppingCart/ShoppingCart';
 import Wishlist from '../Cart/Wishlist/Wishlist';
 import Login from '../../components/Login/Login';
@@ -11,10 +13,10 @@ const Navbar = ({
   setShoppingCart,
   wishlistCart,
   setWishlistCart,
-  userCache,
-  setUserCache,
   notifyToast,
 }) => {
+  const { userCache } = useContext(UserDataContext);
+
   return (
     <div className="navbar__container">
       <div className="navbar__container_logo">Logo</div>
@@ -45,7 +47,7 @@ const Navbar = ({
           </Popover.Trigger>
 
           <Popover.Content css={{ px: '$4', py: '$2' }}>
-            <Login userCache={userCache} setUserCache={setUserCache} />
+            <Login />
           </Popover.Content>
         </Popover>
 
@@ -61,7 +63,6 @@ const Navbar = ({
             <ShoppingCart
               shoppingCart={shoppingCart}
               setShoppingCart={setShoppingCart}
-              userCache={userCache}
               notifyToast={notifyToast}
             />
           </Popover.Content>
