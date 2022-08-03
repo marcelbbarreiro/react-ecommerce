@@ -1,17 +1,14 @@
 import CartItem from '../CartItem/CartItem';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { Button, Loading } from '@nextui-org/react';
+import { UserDataContext } from '../../../contexts/UserDataContext';
 
 import './ShoppingCart.css';
 
-const ShoppingCart = ({
-  shoppingCart,
-  setShoppingCart,
-  userCache,
-  notifyToast,
-}) => {
+const ShoppingCart = ({ shoppingCart, setShoppingCart, notifyToast }) => {
   const [totalItemPrice, setTotalItemPrice] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
+  const { userCache } = useContext(UserDataContext);
 
   useEffect(() => {
     let sumTotalItemPrice = 0;
