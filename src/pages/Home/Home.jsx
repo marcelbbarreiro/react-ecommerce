@@ -3,7 +3,7 @@ import Catalog from "../../components/Store/Catalog/Catalog";
 import ShippingBanner from "../../components/Footer/ShippingBanner/ShippingBanner";
 import Services from "../../components/Footer/Services/Services";
 import BottomSection from "../../components/Footer/BottomSection/BottomSection";
-import { UserDataContext } from "../../context/UserDataContext";
+import { UserDataContext } from "../../contexts/UserDataContext";
 import { useEffect, useState, useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";

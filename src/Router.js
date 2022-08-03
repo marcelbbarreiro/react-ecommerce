@@ -2,7 +2,7 @@ import Home from "./pages/Home/Home";
 import Login from "./components/Login/Login.jsx";
 import Error404 from "./pages/Error404/Error404";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { UserDataContextProvider } from "./context/UserDataContext";
+import { UserDataContextProvider } from "./contexts/UserDataContext";
 
 const Router = () => {
 	return (

@@ -1,19 +1,18 @@
-import {createContext, useState, useEffect} from 'react'
+import { createContext, useEffect, useState } from "react";
 
-export const UserDataContext = createContext({})
+export const UserDataContext = createContext({});
+const userCacheStorage = JSON.parse(localStorage.getItem("userCache")) || {};
 
-const userCacheStorage = JSON.parse(localStorage.getItem('userCache')) || {};
+export const UserDataContextProvider = ({ children }) => {
+	const [userCache, setUserCache] = useState(userCacheStorage);
 
-export const UserDataContextProvider = ({children}) => {
-    const [userCache, setUserCache] = useState(userCacheStorage);
+	useEffect(() => {
+		localStorage.setItem("userCache", JSON.stringify(userCache));
+	}, [userCache]);
 
-    useEffect(() => {
-        localStorage.setItem('userCache', JSON.stringify(userCache));
-      }, [userCache]);
-
-    return (
-        <UserDataContext.Provider value={{userCache,setUserCache}} >
-        {children}
-        </UserDataContext.Provider>
-    )
-}
+	return (
+		<UserDataContext.Provider value={{ userCache, setUserCache }}>
+			{children}
+		</UserDataContext.Provider>
+	);
+};
