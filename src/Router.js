@@ -1,20 +1,22 @@
-import App from "./App";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/Login/Login.jsx";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { UserDataContextProvider } from "./context/UserDataContext";
+import Home from "./pages/Home/Home";
 
 const Router = () => {
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path='/' element={<App />} />
-				<Route path='/success' element={<App />} />
-				<Route path='/cancel' element={<App />} />
-			</Routes>
-			<Routes>
-				<Route path='/login' element={<Login />} />
-			</Routes>
-		</BrowserRouter>
+		<UserDataContextProvider>
+			<BrowserRouter>
+				<Routes>
+					<Route path='/login' element={<Login />} />
+				</Routes>
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/success' element={<Home />} />
+					<Route path='/cancel' element={<Home />} />
+				</Routes>
+			</BrowserRouter>
+		</UserDataContextProvider>
 	);
 };
 
