@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  color: black;
   padding: 20px;
-  gap: 0.5rem;
 }
 .cart-title {
   text-align: center;
-  background: #181818;
+  background: white;
   padding: 20px;
   font-size: larger;
   font-family: sans-serif;
@@ -16,16 +16,10 @@
 }
 
 .cart__total {
-  text-align: end;
+  text-align: start;
   border-top: solid 1px #515151;
   padding-top: 10px;
 }
 .cart__total_price {
-  text-align: end;
-}
-
-.cart__list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  text-align: start;
 }
