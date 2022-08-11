@@ -1,6 +1,6 @@
 .navbar__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 5vh;
   width: 100%;
@@ -13,10 +13,6 @@
 
 .navbar__container_icons {
   display: flex;
-  align-items: center;
-  padding-right: 2rem;
-  gap: 2vw;
-  margin-right: 2rem;
 }
 
 .navbar__container_links {

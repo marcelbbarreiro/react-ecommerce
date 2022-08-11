@@ -1,14 +1,19 @@
 @import url("../../assets/css/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100&display=swap");
 
 .main__app {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
 }
 
 .navbar__container {
   display: flex;
-  height: 5vh;
+  height: 10vh;
   width: 100%;
-  border: 2px solid black;
+  background: #f2f2f2;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
 }

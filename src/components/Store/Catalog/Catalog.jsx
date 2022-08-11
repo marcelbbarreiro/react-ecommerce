@@ -9,6 +9,7 @@ const Catalog = ({
   wishlistCart,
   setWishlistCart,
   notifyToast,
+  dispatch,
 }) => {
   const [products, setSaveProducts] = useState([]);
 
@@ -36,6 +37,7 @@ const Catalog = ({
             wishlistCart={wishlistCart}
             setWishlistCart={setWishlistCart}
             notifyToast={notifyToast}
+            dispatch={dispatch}
           />
         );
       })}

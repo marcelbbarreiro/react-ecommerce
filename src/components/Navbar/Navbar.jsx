@@ -22,7 +22,7 @@ const Navbar = ({
 	return (
 		<div className='navbar__container'>
 			<div className='navbar__container_logo'>
-				<img alt='logo' src={require("../../assets/img/a.png")}></img>
+				<img alt='logo' src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/JasonLogo.png"></img>
 			</div>
 			<div className='navbar__container_links'>
 				<span className='navbar__container_link'>DEMO</span>
@@ -68,7 +68,7 @@ const Navbar = ({
 
 				<Popover>
 					<Popover.Trigger>
-						<Button
+						<Button auto
 							icon={<img src={Buy} alt='icon' className='icon-heart' />}
 							color='error'
 							light
@@ -86,7 +86,7 @@ const Navbar = ({
 
 				<Popover>
 					<Popover.Trigger>
-						<Button
+						<Button auto
 							icon={<img src={Heart} alt='icon' className='icon-heart' />}
 							color='error'
 							light

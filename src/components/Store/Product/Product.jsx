@@ -21,7 +21,7 @@ const Product = ({
 }) => {
 	const [itemAdded, setItemAdded] = useState(false);
 	const [wishlistAdded, setWishlistAdded] = useState(false);
-
+console.log(dispatch);
 	const addToCart = () => {
 		setShoppingCart([
 			...shoppingCart,
