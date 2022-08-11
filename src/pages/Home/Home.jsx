@@ -1,9 +1,11 @@
 import Navbar from "../../components/Navbar/Navbar";
-import Catalog from "../../components/Store/Catalog/Catalog";
+import ImageCarousel from "../../components/Store/ImageGallery/ImageCarousel";
 import ShippingBanner from "../../components/Footer/ShippingBanner/ShippingBanner";
+import SelectFighter from "../../components/SelectFighter/SelectFighter";
+import Catalog from "../../components/Store/Catalog/Catalog";
+import PresentationVideo from "../../components/PresentationVideo/PresentationVideo"
 import Services from "../../components/Footer/Services/Services";
 import BottomSection from "../../components/Footer/BottomSection/BottomSection";
-import ImageCarousel from "../../components/Store/ImageGallery/ImageCarousel";
 import { wishlistReducer } from "../../reducers/wishlistReducer";
 import { UserDataContext } from "../../contexts/UserDataContext";
 import { useEffect, useState, useContext, useReducer } from "react";
@@ -58,6 +60,8 @@ const Home = () => {
 				wishlistCart={wishlistCart}
 			/>
 			<ImageCarousel />
+			<Services />
+			<SelectFighter />
 			<Catalog
 				shoppingCart={shoppingCart}
 				setShoppingCart={setShoppingCart}
@@ -65,8 +69,8 @@ const Home = () => {
 				wishlistCart={wishlistCart}
 				notifyToast={notifyToast}
 			/>
+			<PresentationVideo />
 			<ShippingBanner />
-			<Services />
 			<BottomSection />
 			<Toaster position='top-left' reverseOrder={false} />
 		</div>

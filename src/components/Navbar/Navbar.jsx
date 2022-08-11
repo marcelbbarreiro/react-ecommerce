@@ -22,7 +22,7 @@ const Navbar = ({
 	return (
 		<div className='navbar__container'>
 			<div className='navbar__container_logo'>
-				<img alt='logo' src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/JasonLogo.png"></img>
+				<img alt='logo' src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/Logo-Jason2.jpg"></img>
 			</div>
 			<div className='navbar__container_links'>
 				<span className='navbar__container_link'>DEMO</span>

@@ -1,0 +1,20 @@
+.video_player__container {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  background-color: darkgray;
+}
+
+.video_btn__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.video_btn__container_button {
+  margin: auto;
+  width: 10%;
+  padding: 10px;
+}

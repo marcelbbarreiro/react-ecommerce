@@ -1,0 +1,43 @@
+.select_fighter__bg {
+  background-image: url("https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/SelectFighter_Title.jpg");
+  background-size: cover;
+  color: whitesmoke;
+  text-align: center;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-position-y: -15px;
+}
+.select_fighter__text {
+  font-weight: initial;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+.fighter__word {
+  color: #e95116;
+}
+
+.select_fighter__container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-image: url("https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/SelectFighter_01.jpg");
+  background-size: cover;
+  background-position-y: -30px;
+}
+
+.select_fighter__container_fighter {
+  display: flex;
+  text-align: center;
+}
+
+.select_fighter__container_fighter_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem;
+}

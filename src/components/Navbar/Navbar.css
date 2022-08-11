@@ -1,14 +1,14 @@
 .navbar__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 5vh;
   width: 100%;
-  border-top: 1px solid black;
 }
 
 .navbar__container_logo {
-  width: 50%;
+  width: 480px;
+  background: black;
 }
 
 .navbar__container_icons {
