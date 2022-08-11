@@ -1,8 +1,8 @@
 .video_player__container {
   margin: auto;
   width: 100%;
-  padding: 10px;
-  background-color: darkgray;
+  padding: 80px 17px 170px 17px;
+  background-color: #252525;
 }
 
 .video_btn__container {
@@ -17,4 +17,23 @@
   margin: auto;
   width: 10%;
   padding: 10px;
+}
+
+.play_button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0px;
+  background: transparent;
+  border: 0;
+  color: white;
+}
+
+.watch_video {
+  text-align: center;
+  color: white;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 0px;
 }

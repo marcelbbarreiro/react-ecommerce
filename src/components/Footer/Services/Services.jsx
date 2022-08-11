@@ -1,5 +1,4 @@
 import { FaReply } from "react-icons/fa";
-import { FaHeadset } from "react-icons/fa";
 import { FaCreditCard } from "react-icons/fa";
 import { FaShippingFast } from "react-icons/fa";
 import "./Services.css";

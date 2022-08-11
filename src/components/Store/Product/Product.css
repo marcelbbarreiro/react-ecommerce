@@ -46,3 +46,36 @@
   justify-content: space-between;
   padding: 0;
 }
+
+.nextui-c-PJLV-ibuVDQa-css {
+  color: #ff8200;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.nextui-c-PJLV-ifpbLBb-css {
+  font-family: "Roboto";
+  color: whitesmoke;
+}
+.nextui-c-PJLV-ieBTzhq-css {
+  color: whitesmoke;
+  margin: inherit;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.nextui-c-PJLV-ikzZBhP-css {
+  color: white;
+  font-size: 12px;
+  margin: inherit;
+  text-transform: uppercase;
+  font-family: "Roboto";
+}
+
+.nextui-c-iWjDFM-idzcxgB-css {
+  background: transparent;
+  color: #f31460;
+}

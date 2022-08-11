@@ -1,0 +1,11 @@
+.ranking__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ranking__container_fighter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

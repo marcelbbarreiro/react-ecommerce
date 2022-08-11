@@ -6,6 +6,8 @@ import Catalog from "../../components/Store/Catalog/Catalog";
 import PresentationVideo from "../../components/PresentationVideo/PresentationVideo"
 import Services from "../../components/Footer/Services/Services";
 import BottomSection from "../../components/Footer/BottomSection/BottomSection";
+import Sponsors from "../../components/Sponsors/Sponsors";
+import Ranking from "../../components/Ranking/Ranking";
 import { wishlistReducer } from "../../reducers/wishlistReducer";
 import { UserDataContext } from "../../contexts/UserDataContext";
 import { useEffect, useState, useContext, useReducer } from "react";
@@ -70,7 +72,9 @@ const Home = () => {
 				notifyToast={notifyToast}
 			/>
 			<PresentationVideo />
+			<Sponsors />
 			<ShippingBanner />
+			<Ranking />
 			<BottomSection />
 			<Toaster position='top-left' reverseOrder={false} />
 		</div>

@@ -8,7 +8,7 @@
 
 .navbar__container_logo {
   width: 480px;
-  background: black;
+  background-image: url("https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/bg.jpg");
 }
 
 .navbar__container_icons {
@@ -20,4 +20,23 @@
   justify-content: space-between;
   align-items: center;
   gap: 2vw;
+}
+.top-bar {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-family: "Poppins";
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+}
+
+.coupon {
+  margin-left: 20px;
 }

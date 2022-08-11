@@ -7,10 +7,10 @@ function PresentationVideo() {
   const { setVisible, bindings } = useModal();
   return (
       <div className="video_player__container">
-        <div className=".video_btn__container ">
-          <Button onClick={() => setVisible(true)}>
+        <div className="video_btn__container ">
+          <button className="play_button"  onClick={() => setVisible(true)}>
             <BsPlayCircle size="6rem" />
-          </Button>
+          </button>
           <Modal
             blur
             scroll
@@ -42,6 +42,7 @@ function PresentationVideo() {
             </Modal.Footer>
           </Modal>
         </div>
+        <div className="watch_video"> WATCH TRAILER</div>
       </div>
   );
 }
