@@ -47,15 +47,6 @@ const Wishlist = ({
 				)}
 			</ul>
 			<div className='cart__bottom'>
-				<Tooltip
-					placement='bottom'
-					content='Items on your Wishlist!'
-					color='warning'
-				>
-					<Button flat auto color='warning'>
-						{totalItemWishlist}
-					</Button>
-				</Tooltip>
 			</div>
 		</div>
 	);

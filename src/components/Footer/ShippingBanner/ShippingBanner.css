@@ -1,8 +1,9 @@
 .freeShipping__container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem;
-	border: 2px solid black;
-	gap: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #959595;
+  background: #f2f2f2;
+  margin-top: -30px;
+  font-family: "Poppins";
 }

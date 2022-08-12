@@ -79,3 +79,34 @@
   background: transparent;
   color: #f31460;
 }
+
+.product__search {
+  background: transparent;
+  color: #f31460;
+  border: 0;
+  padding: 0px;
+}
+
+.nextui-c-dfbgCO-ijakZJF-css {
+  justify-content: space-between;
+}
+
+.nextui-c-jxECYO {
+  padding: 0px;
+}
+
+.shop_Now {
+  background: transparent;
+  border: 1px solid #ff9800;
+  border-radius: 20px 0px 20px 0px;
+}
+
+.shop_Now :hover {
+  color: #ff8200;
+}
+
+.nextui-c-BDLTQ-ichiZSV-css {
+  width: 75%;
+  height: 318px;
+  padding-bottom: 40px;
+}

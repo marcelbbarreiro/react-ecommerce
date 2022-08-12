@@ -77,17 +77,16 @@ const Product = ({
     <Card css={{ w: "75%", h: "330px" }}>
       <Card.Header css={{ position: "absolute" }}>
         <Row justify="center" align="center">
-          <Link to={`/productpage/${id}`}>
-            <Button
-              color="error"
-              light
-              onClick={addTowishlistCart}
-              disabled={wishlistAdded}
-            >
-              <AiOutlineSearch size="4.5rem" />
-            </Button>
+        <Link to={`/productpage/${id}`}>
+          <button className="product__search"
+            color="error"
+            light
+          >
+            <AiOutlineSearch size="4.5rem" />
+          </button>
           </Link>
-          <Button
+
+          <button className="product__search"
             color="error"
             light
             onClick={addTowishlistCart}
@@ -98,18 +97,20 @@ const Product = ({
             ) : (
               <AiOutlineHeart size="4.5rem" />
             )}
-          </Button>
+          </button>
         </Row>
       </Card.Header>
 
       <Card.Body css={{ p: 0 }}>
-        <Card.Image
-          src={image}
-          width="100%"
-          height="100%"
-          objectFit="cover"
-          alt="Card example background"
-        />
+        
+          <Card.Image
+            src={image}
+            width="100%"
+            height="100%"
+            objectFit="cover"
+            alt="Card example background"
+          />
+       
       </Card.Body>
 
       <Card.Footer
@@ -135,7 +136,7 @@ const Product = ({
           </Col>
           <Row>
             <Row justify="flex-end">
-              <Button color="warning" auto ghost disabled={itemAdded}>
+              <button className="shop_Now" color="warning" auto ghost disabled={itemAdded}>
                 <Text
                   css={{ color: "black" }}
                   size={12}
@@ -145,7 +146,7 @@ const Product = ({
                 >
                   {itemAdded ? "Added" : "Shop Now"}
                 </Text>
-              </Button>
+              </button>
             </Row>
           </Row>
         </Row>
