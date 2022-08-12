@@ -30,8 +30,8 @@ const ProductPage = () => {
 			<figure>
 				<img src={productPage.image} alt='' />
 				<div className="product-page-description">
-					<figcaption>{productPage.title}</figcaption>
-					<figcaption>{productPage.description}</figcaption>
+					<figcaption className="product-tittle">{productPage.title}</figcaption>
+					<figcaption className="product-description-page">{productPage.description}</figcaption>
 					<figcaption>{productPage.category}</figcaption>
 				</div>
 			</figure>
