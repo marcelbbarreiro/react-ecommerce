@@ -17,14 +17,14 @@
   text-transform: uppercase;
 }
 .fighter__word {
-  color: #e95116;
+  color: #f80246;
 }
 
 .select_fighter__container {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  background-image: url("https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/SelectFighter_01.jpg");
+  background-image: url("https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/PINKBG.jpg");
   background-size: cover;
   background-position-y: -30px;
   height: 480px;
@@ -66,7 +66,7 @@
 }
 .store_icons {
   margin: -30px;
-  color: #e95116;
+  color: #f80246;
 }
 .best_sellers {
   text-align: center;

@@ -48,7 +48,7 @@
 }
 
 .nextui-c-PJLV-ibuVDQa-css {
-  color: #ff8200;
+  color: whitesmoke;
   font-size: 18px;
   font-family: "Poppins";
   font-weight: 400;
@@ -57,7 +57,7 @@
 
 .nextui-c-PJLV-ifpbLBb-css {
   font-family: "Roboto";
-  color: whitesmoke;
+  color: #f80246;
 }
 .nextui-c-PJLV-ieBTzhq-css {
   color: whitesmoke;
@@ -97,12 +97,12 @@
 
 .shop_Now {
   background: transparent;
-  border: 1px solid #ff9800;
+  border: 1px solid #f80246;
   border-radius: 20px 0px 20px 0px;
 }
 
 .shop_Now :hover {
-  color: #ff8200;
+  color: #f80246;
 }
 
 .nextui-c-BDLTQ-ichiZSV-css {
@@ -111,5 +111,5 @@
   padding-bottom: 40px;
   border-radius: 42px 22px 30px 28px;
   box-shadow: 8px 31px 30px #00000030;
-  border-bottom: 12px #ff8200 ridge;
+  border-bottom: 12px #f80246 ridge;
 }

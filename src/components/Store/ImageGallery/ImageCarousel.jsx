@@ -4,14 +4,14 @@ import "./ImageCarousel.css";
 function ImageCarousel() {
 	const images = [
 		{
-			original: "https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/Jason-statham-Banner.jpg",
+			original: "https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/Jason-statham-Banner-1.jpg",
 		},
 		{
-			original: "https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/Jason-statham-Banner.jpg",
+			original: "https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/Jason-statham-Banner2.jpg",
 		},
 		{
 			original:
-				"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/Jason-statham-Banner.jpg",
+				"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/Jason-statham-Banner-1.jpg",
 		},
 	];
 

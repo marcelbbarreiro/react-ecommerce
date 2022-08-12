@@ -60,7 +60,7 @@ const Navbar = ({
         <div className="navbar__container_logo">
           <img
             alt="logo"
-            src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/LogoJason.png"
+            src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/08/LogoJason_pink.png"
           ></img>
         </div>
         <div className="navbar__container_links">

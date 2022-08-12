@@ -58,7 +58,7 @@
 }
 
 .ranking__number {
-  color: #e04c14;
+  color: #f80246;
   font-size: 25px;
   font-weight: 700;
 }
@@ -86,7 +86,7 @@
   font-size: inherit;
   line-height: inherit;
   color: inherit;
-  background: #e04c14;
+  background: #f80246;
   border: 0;
   width: 50%;
   margin: 15px auto;
