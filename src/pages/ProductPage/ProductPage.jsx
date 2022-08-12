@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import "./ProductPage.css";
+import Navbar from "../../components/Navbar/Navbar";	
 
 const ProductPage = () => {
 	const [productPage, setProductPage] = useState({});
@@ -23,14 +25,19 @@ const ProductPage = () => {
 
 	return (
 		<>
+			<Navbar />
+		<div className="product-page">
 			<figure>
 				<img src={productPage.image} alt='' />
-				<figcaption>{productPage.title}</figcaption>
-				<figcaption>{productPage.description}</figcaption>
-				<figcaption>{productPage.category}</figcaption>
+				<div className="product-page-description">
+					<figcaption>{productPage.title}</figcaption>
+					<figcaption>{productPage.description}</figcaption>
+					<figcaption>{productPage.category}</figcaption>
+				</div>
 			</figure>
+			</div>
 			<Link to={"/"}>
-				<button>Go Back!</button>
+				<button className="btn-back">Go Back!</button>
 			</Link>
 		</>
 	);

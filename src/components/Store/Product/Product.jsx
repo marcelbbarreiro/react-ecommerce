@@ -101,6 +101,7 @@ const Product = ({
           </Button>
         </Row>
       </Card.Header>
+
       <Card.Body css={{ p: 0 }}>
         <Card.Image
           src={image}

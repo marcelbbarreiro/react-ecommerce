@@ -6,14 +6,3 @@
   flex-direction: column;
 }
 
-.navbar__container {
-  display: flex;
-  height: 10vh;
-  width: 100%;
-  background: #f2f2f2;
-  flex-wrap: nowrap;
-  align-content: center;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-}

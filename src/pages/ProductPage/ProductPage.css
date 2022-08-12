@@ -1,0 +1,29 @@
+.product-page {
+  display: flex;
+  justify-content: center;
+  padding: 2px 130px 0px 130px;
+  background: #f3f3f3;
+}
+.product-page-description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 20px 30px;
+  background: black;
+  border-radius: 50px 50px 0px 0px;
+  color: white;
+  width: 90%;
+  margin: auto;
+  line-height: 20px;
+}
+.btn-back {
+  width: -webkit-fill-available;
+  background: gray;
+  color: whitesmoke;
+  font-family: system-ui;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  border-top: 7px solid #5f5e5e;
+}
