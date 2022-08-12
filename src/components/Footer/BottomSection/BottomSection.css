@@ -9,6 +9,9 @@
   font-family: "Poppins";
   font-weight: 300;
   font-size: 14px;
+  border-top: 4px;
+  border-style: groove;
+  margin-top: 10px;
 }
 
 .footer__container_list ul {

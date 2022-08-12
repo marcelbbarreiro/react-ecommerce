@@ -31,7 +31,7 @@ const Navbar = ({
     <>
       <div className="top-bar">
         <div>
-          <p className="coupon"> GET 20% SALE WITH COUPONE CODE CGBNJKI25 </p>
+          <p className="coupon"> GET 20% SALE WITH COUPONE CODE <span className="coupon-text">GBNJKI25</span></p>
         </div>
         <div className="social_network__container">
           <IconContext.Provider value={{ size: "4.2rem", color: "white" }}>

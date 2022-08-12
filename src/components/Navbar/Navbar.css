@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2vw;
+  gap: 15px;
 }
 .top-bar {
   background: black;
@@ -40,10 +40,16 @@
   justify-content: space-between;
   align-items: center;
   height: 35px;
+  filter: drop-shadow(2px 5px 4px #00000045);
 }
 
 .coupon {
   margin-left: 20px;
+}
+
+.coupon-text {
+  color: #e7592a;
+  font-weight: 600;
 }
 
 .nextui-c-iWjDFM .nextui-button-text {
@@ -87,3 +93,5 @@
   text-align: center;
   padding: 10px;
 }
+
+

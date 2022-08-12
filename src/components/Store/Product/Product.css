@@ -106,7 +106,10 @@
 }
 
 .nextui-c-BDLTQ-ichiZSV-css {
-  width: 75%;
-  height: 318px;
+  width: 85%;
+  height: 350px;
   padding-bottom: 40px;
+  border-radius: 42px 22px 30px 28px;
+  box-shadow: 8px 31px 30px #00000030;
+  border-bottom: 12px #ff8200 ridge;
 }

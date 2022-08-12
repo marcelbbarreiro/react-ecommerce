@@ -90,13 +90,13 @@ const CartItem = ({
 								-
 							</Button>
 							<p>{itemQuantity}</p>
-							<Button light color='error' auto onClick={addQuantityItem}>
-								+
+							<Button  light color='error' auto onClick={addQuantityItem}>
+								<span>+</span>
 							</Button>
 						</>
 					)}
 					<Button light color='error' auto onClick={itemRemove}>
-						Remove
+					-	Remove
 					</Button>
 				</div>
 			</div>
